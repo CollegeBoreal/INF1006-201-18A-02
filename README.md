@@ -17,9 +17,7 @@ Presenter pour le 18/09 votre Model:
 
 |No|L'etudiant(e) aura demontre, de facon fiable, sa capacite a:      |          Elements de performance                               | 
 |--|------------------------------------------------------------------|:---------------------------------------------------------------| 
-| 1| Créer et gérer, à l’aide d’un logiciel basé sur du texte, une
-base de données relationnelle en fonction des besoins
-particuliers d’une situation donnée                           | Savoir:                                                        | 
+| 1| Créer et gérer, à l’aide d’un logiciel basé sur du texte, une base de données relationnelle en fonction des besoins particuliers d’une situation donnée                           | Savoir:                                                        | 
 |  |                                                                  |  Créer une base de données en fonction de la commande reçue
 |  |                                                                  |  Créer des tables dans une base de données existante
 |  |                                                                  |  Maintenir des données (p. ex., ajouter, supprimer et modifier des records dans une table) |

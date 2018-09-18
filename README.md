@@ -17,7 +17,18 @@ Presenter pour le 18/09 votre Model:
 
 |No|L'etudiant(e) aura demontre, de facon fiable, sa capacite a:      |          Elements de performance                               | 
 |--|------------------------------------------------------------------|:---------------------------------------------------------------| 
-| 1| installater un systeme d'exploitation                            | Savoir:                                                        | 
+| 1| Créer et gérer, à l’aide d’un logiciel basé sur du texte, une
+base de données relationnelle en fonction des besoins
+particuliers d’une situation donnée                           | Savoir:                                                        | 
+|  |                                                                  |  Créer une base de données en fonction de la commande reçue
+|  |                                                                  |  Créer des tables dans une base de données existante
+|  |                                                                  |  Maintenir des données (p. ex., ajouter, supprimer et modifier des records dans une table) |
+|  |                                                                  |  Créer une copie de sauvegarde (backup) d’une base de données |
+|  |                                                                  |  Créer une requête appropriée en fonction du contexte donné   |
+|  |                                                                  |  Créer une sous-requête en fonction du contexte donné         | 
+|  |                                                                  |  Créer une vue appropriée en fonction du contexte donné       |
+|  |                                                                  |  Définir les relations entre des tables                       |
+|  |                                                                  | Savoir Faire:                                                  | 
 |  |                                                                  | Savoir Faire:                                                  | 
 |  |                                                                  | Savoir Etre:                                                   | 
 | 2| Planifier les services                                           | Savoir:                                                        | 
@@ -28,18 +39,7 @@ Presenter pour le 18/09 votre Model:
 No. À la fin du cours, la personne diplômée aura
 démontré, de façon fiable, son habileté à :
 Éléments de performance
-1 Créer et gérer, à l’aide d’un logiciel basé sur du texte, une
-base de données relationnelle en fonction des besoins
-particuliers d’une situation donnée
- Créer une base de données en fonction de la commande reçue
- Créer des tables dans une base de données existante
- Maintenir des données (p. ex., ajouter, supprimer et modifier des records
-dans une table)
- Créer une copie de sauvegarde (backup) d’une base de données
- Créer une requête appropriée en fonction du contexte donné
- Créer une sous-requête en fonction du contexte donné
- Créer une vue appropriée en fonction du contexte donné
- Définir les relations entre des tables
+1 
 ```
 
 ## Elements de Performance

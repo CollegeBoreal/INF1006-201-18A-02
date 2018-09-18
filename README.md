@@ -3,10 +3,10 @@ Système de gestion de bases de données
 
 ## Devoirs:
 
-| Date   |                                                     |     Commentaires                                        |
-|:------:|:----------------------------------------------------|:--------------------------------------------------------|
-|20-09-18| [3NF](./0.3NF)                                      | * Domaine, * 1NF, * 2NF, * 3NF                          |
-|20-09-18| [Modele](./1.Modele)                                | Presenter l'ebauche du model sous MySQL Workbench       |
+| Date   |                                                     |     Commentaires                                                      |
+|:------:|:----------------------------------------------------|:----------------------------------------------------------------------|
+|20-09-18| [3NF](./0.3NF)                                      | * Domaine, * 1NF, * 2NF, * 3NF                                        |
+|20-09-18| [Modele](./1.Modele)                                | Presenter l'ebauche du model sous MySQL Workbench, fichier _*.mwb_    |
 
 
 

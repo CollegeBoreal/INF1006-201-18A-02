@@ -3,7 +3,7 @@ Système de gestion de bases de données
 
 ## Devoir
 
-Presenter pour le 18/90 votre Model:
+Presenter pour le 18/09 votre Model:
 
 * Domaine
 
@@ -12,3 +12,10 @@ Presenter pour le 18/90 votre Model:
 * 2NF
 
 * 3NF
+
+
+
+
+References:
+
+https://books.goalkicker.com/MySQLBook/ (feee books)

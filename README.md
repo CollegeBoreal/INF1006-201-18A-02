@@ -3,15 +3,12 @@ Système de gestion de bases de données
 
 ## Devoirs:
 
-Presenter pour le 20/09 votre Model:
+| Date   |                                                     |     Commentaires                                        |
+|:------:|:----------------------------------------------------|:--------------------------------------------------------|
+|20-09-18| [3NF](./0.3NF)                                      | * Domaine, * 1NF, * 2NF, * 3NF                          |
+|20-09-18| [Model](./1.Modele)                                 | Presenter l'ebauche du model sous MySQL Workbench       |
 
-* Domaine
 
-* 1NF
-
-* 2NF
-
-* 3NF
 
 ## Resultats d'Apprentissage du Cours
 

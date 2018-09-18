@@ -6,7 +6,7 @@ Système de gestion de bases de données
 | Date   |                                                     |     Commentaires                                        |
 |:------:|:----------------------------------------------------|:--------------------------------------------------------|
 |20-09-18| [3NF](./0.3NF)                                      | * Domaine, * 1NF, * 2NF, * 3NF                          |
-|20-09-18| [Model](./1.Modele)                                 | Presenter l'ebauche du model sous MySQL Workbench       |
+|20-09-18| [Modele](./1.Modele)                                | Presenter l'ebauche du model sous MySQL Workbench       |
 
 
 

@@ -26,13 +26,6 @@ Presenter pour le 18/09 votre Model:
 |  |                                                                  | * Créer une vue appropriée en fonction du contexte donné       |
 |  |                                                                  | * Définir les relations entre des tables                       |
 
-```
-No. À la fin du cours, la personne diplômée aura
-démontré, de façon fiable, son habileté à :
-Éléments de performance
-1 
-```
-
 ## Elements de Performance
 
 |No| Date   | Cours                       | Intitulé                                |  Pratique .                            |

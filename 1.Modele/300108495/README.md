@@ -1,4 +1,4 @@
 #MyModule
 
 
-![Alt tag] (md.png)
+![Alt tag](md.png)

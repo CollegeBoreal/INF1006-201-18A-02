@@ -32,7 +32,7 @@ Système de gestion de bases de données
 
 ## References
 
-https://books.goalkicker.com/MySQLBook/ (feee books)
+https://books.goalkicker.com/MySQLBook/ (free books)
 
 http://sql.sh/ressources/cours-sql-sh-.pdf (En francais)
 

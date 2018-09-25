@@ -34,25 +34,18 @@ http://downloads.mysql.com/docs/sakila-db.zip
 $ docker exec -it some-mysql mysql -u root -p -e "create database sakila;"
 ```
 
-- Créer l'utilisateur etudiants
-
-```
-$ docker exec -it some-mysql \
- mysql -u root -p -e "GRANT ALL PRIVILEGES on *.* TO 'etudiants'@'localhost' IDENTIFIED BY 'etudiants_1' WITH GRANT OPTION;"
-```
-
 - Charger la base
 
 ```
-$ docker exec  -i some-mysql  mysql -u etudiants -p<MDP> sakila < ~/sakila-db/sakila-schema.sql
+$ docker exec  -i some-mysql  mysql -u root -ppassword sakila < ~/sakila-db/sakila-schema.sql
 ```
 
 - Charger les données
 
 ```
-$ docker exec  -i some-mysql  mysql -u etudiants -p<MDP> sakila < ~/sakila-db/sakila-data.sql
+$ docker exec  -i some-mysql  mysql -u root -ppassword sakila < ~/sakila-db/sakila-data.sql
 ```
 
 ### Éxécuter les commandes SQL de BlackBoard
 
-![alt tag](https://github.com/CollegeBoreal/INF1006-16A/blob/master/3.DML/sakila.png)
+![alt tag](https://github.com/CollegeBoreal/INF1006-202-18A-02/blob/master/2.DML/sakila.png)

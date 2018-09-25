@@ -34,6 +34,8 @@ Système de gestion de bases de données
 
 https://books.goalkicker.com/MySQLBook/ (feee books)
 
+http://sql.sh/ressources/cours-sql-sh-.pdf (En francais)
+
 
 ### SGBD:
 

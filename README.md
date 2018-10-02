@@ -26,9 +26,10 @@ Système de gestion de bases de données
 
 ## Elements de Performance
 
-|No| Date   | Cours                       | Intitulé                                |  Pratique .                            |
-|--|--------|:----------------------------|:----------------------------------------|:---------------------------------------|
-| 1|05-09-17|                             | Rentree des classes                     |                                        |
+|No| Date   | Cours                       | Intitulé              |  Pratique .                                          |
+|--|--------|:----------------------------|:----------------------|:-----------------------------------------------------|
+| 1|05-09-17|                             | Rentree des classes   |                                                      |
+| 3|02-10-18| [DML](./2.DML#exercices)    | DML                   | Join, alias, inner join (ANSI-92), Cartesian Product |
 
 
 ## References

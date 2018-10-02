@@ -59,7 +59,7 @@ $ docker exec --interactive --tty some-mysql bash
 . lancer le CLI (Command Level Interface) de MySQL
 
 ```
-# mysql -u root -p 
+#  mysql --user root --password
 ```
 
 

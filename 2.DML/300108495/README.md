@@ -1,6 +1,8 @@
 # 1er requete:
 ```
-mysql> select customer.last_name AS nom, sum(payment.amount) AS facture from customer,address,city,payment where city.city_id like 'Lubumbashi%' group by customer.last_name;
+mysql> select customer.last_name AS nom, sum(payment.amount) AS facture 
+from customer,address,city,payment 
+where city.city_id like 'Lubumbashi%' group by customer.last_name;
 ```
  
  # 2eme requete:

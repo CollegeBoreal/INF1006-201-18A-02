@@ -11,7 +11,7 @@ Se référer au fichier suivant:
 
 [JOIN](JOIN.md)
 
-### Perfectionnement
+### Perfectionnement:
 
 1. Quel(le) acteur(rice) est apparu(e) dans le plus de films?
 2. Quel est la longueur moyenne des films par catégorie? Trié par longueur moyenne

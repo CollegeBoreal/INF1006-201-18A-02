@@ -31,19 +31,19 @@ http://downloads.mysql.com/docs/sakila-db.zip
 - Créer la base de données sakila
 
 ```
-$ docker exec -it some-mysql mysql -u root -p -e "create database sakila;"
+$ docker exec --interactive --tty some-mysql mysql --user root --password --execute "create database sakila;"
 ```
 
 - Charger la base
 
 ```
-$ docker exec  -i some-mysql  mysql -u root -ppassword sakila < ~/sakila-db/sakila-schema.sql
+$ docker exec  --interactive some-mysql  mysql --user root --passwordpassword sakila < ~/sakila-db/sakila-schema.sql
 ```
 
 - Charger les données
 
 ```
-$ docker exec  -i some-mysql  mysql -u root -ppassword sakila < ~/sakila-db/sakila-data.sql
+$ docker exec  --interactive some-mysql  mysql --user root --passwordpassword sakila < ~/sakila-db/sakila-data.sql
 ```
 
 ### Éxécuter les commandes SQL de BlackBoard

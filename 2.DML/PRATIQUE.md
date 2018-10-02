@@ -10,3 +10,8 @@
 Se référer au fichier suivant:
 
 [JOIN](JOIN.md)
+
+### Perfectionnement
+
+1. Quel est la longueur moyenne des films par categorie? Trie par la longueur moyenne 
+2. Quel sont les categories qui ont les plus longs films (i.e. depassant la longueur moyenne) ? Trie par la longueur moyenne 

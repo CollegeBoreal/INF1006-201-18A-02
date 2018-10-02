@@ -41,8 +41,16 @@ http://sql.sh/ressources/cours-sql-sh-.pdf (En francais)
 
 https://hub.docker.com/_/mysql/
 
+* Créer le conteneur
+
 ```
 $ docker run --name some-mysql --env MYSQL_ROOT_PASSWORD=password --detach mysql:latest
+```
+
+* Accéder au conteneur
+
+```
+$ docker exec --interactive --tty some-mysql bash
 ```
 
 

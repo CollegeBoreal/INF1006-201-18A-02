@@ -13,5 +13,6 @@ Se référer au fichier suivant:
 
 ### Perfectionnement
 
-1. Quel est la longueur moyenne des films par categorie? Trie par la longueur moyenne 
-2. Quel sont les categories qui ont les plus longs films (i.e. depassant la longueur moyenne) ? Trie par la longueur moyenne 
+1. Quel(le) acteur(rice) est apparu(e) dans le plus de films?
+2. Quel est la longueur moyenne des films par catégorie? Trié par la longueur moyenne
+3. Quel sont les catégories qui ont les plus longs films (i.e. dépassant la longueur moyenne) ? Trié par la longueur moyenne

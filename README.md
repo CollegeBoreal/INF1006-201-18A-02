@@ -37,6 +37,14 @@ https://books.goalkicker.com/MySQLBook/ (free books)
 
 http://sql.sh/ressources/cours-sql-sh-.pdf (En francais)
 
+### Docker
+
+https://hub.docker.com/_/mysql/
+
+```
+$ docker run --name some-mysql --env MYSQL_ROOT_PASSWORD=password --detach mysql:latest
+```
+
 
 ### SGBD:
 

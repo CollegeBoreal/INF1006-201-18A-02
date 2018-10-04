@@ -10,3 +10,11 @@ LIMIT 1
 ```
 
 2eme requete
+```
+SELECT category.name, avg(film.length) 
+FROM film
+JOIN film_category USING (film_id) 
+JOIN category USING (category_id) 
+GROUP BY category.name
+ORDER BY avg(film.length) DESC;
+```

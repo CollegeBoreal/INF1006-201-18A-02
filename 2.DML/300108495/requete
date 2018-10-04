@@ -1,0 +1,6 @@
+```
+sql> select actor a, film f
+from film_actor fa,actor a, film f
+where
+    fa.actor_id = a.actor_id
+    fa.film_id = f.film_id

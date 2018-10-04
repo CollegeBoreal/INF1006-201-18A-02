@@ -19,6 +19,15 @@ http://downloads.mysql.com/docs/sakila-db.zip
 $ docker exec --interactive --tty some-mysql mysql --user root --password --execute "create database sakila;"
 ```
 
+
+```
+$ docker exec --interactive some-mysql  mysql --user root -ppassword --exec "CREATE USER 'etudiants'@'localhost' IDENTIFIED BY 'etudiants_1';"
+```
+
+```
+$ docker exec --interactive some-mysql  mysql --user root -ppassword --exec "GRANT ALL ON etudiants.* TO 'etudiants'@'localhost';"
+```
+
 - Charger la base
 
 ```

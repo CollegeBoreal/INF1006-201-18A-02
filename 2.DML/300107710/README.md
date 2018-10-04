@@ -72,3 +72,15 @@ JOIN category c USING(category_id)
 GROUP BY c.name
 ORDER BY avg(f.length) DESC;
 ````
+
+6eme REquete
+
+````
+SELECT c.name, avg(f.length) AS DURATION
+FROM film f
+JOIN film_category USING(film_id) 
+JOIN category c USING(category_id)
+GROUP BY c.name 
+HAVING avg(f.length) > (SELECT avg(film.length) FROM film)
+ORDER BY avg(f.length) DESC;
+````

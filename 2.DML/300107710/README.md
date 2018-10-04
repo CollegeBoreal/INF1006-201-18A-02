@@ -61,3 +61,14 @@ ORDER BY COUNT(actor.actor_id) desc
 LIMIT 1  ;
 
 ````
+
+5eme Requete
+
+````
+SELECT c.name, avg(f.length) AS DURATION
+FROM film f
+JOIN film_category USING(film_id) 
+JOIN category c USING(category_id)
+GROUP BY c.name
+ORDER BY avg(f.length) DESC;
+````

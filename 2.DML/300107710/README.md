@@ -1,5 +1,5 @@
 
-1ere requete:
+1ere Requete:
 
 ````
 SELECT 
@@ -18,7 +18,7 @@ WHERE
 GROUP BY m.last_name;
 ````
 
-2eme requete:
+2eme Requete:
 
 ````
 Select o.country AS Pays, m.last_name as Nom, p.amount as Facture from 
@@ -30,7 +30,7 @@ inner join payment p on p.customer_id = m.customer_id
 where country like 'Congo%' OR country like 'Algeria';
 ````
 
-3eme requete :
+3eme Requete :
 
 ````
 SELECT 
@@ -50,7 +50,7 @@ GROUP BY o.country , m.last_name
 having SUM(p.amount)>100 ;
 ````
 
-4eme Requete
+4eme Requete:
 
 ````
 SELECT actor.last_name, COUNT(actor_id) 
@@ -62,7 +62,7 @@ LIMIT 1  ;
 
 ````
 
-5eme Requete
+5eme Requete:
 
 ````
 SELECT c.name, avg(f.length) AS DURATION
@@ -73,7 +73,7 @@ GROUP BY c.name
 ORDER BY avg(f.length) DESC;
 ````
 
-6eme REquete
+6eme Requete:
 
 ````
 SELECT c.name, avg(f.length) AS DURATION

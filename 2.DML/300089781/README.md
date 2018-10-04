@@ -11,10 +11,10 @@ LIMIT 1
 
 2eme requete
 ```
-SELECT category.name, avg(film.length) 
-FROM film
+SELECT c.name, avg(f.length) AS duration 
+FROM film f
 JOIN film_category USING (film_id) 
-JOIN category USING (category_id) 
-GROUP BY category.name
-ORDER BY avg(film.length) DESC;
+JOIN category c USING (category_id) 
+GROUP BY c.name
+ORDER BY avg(f.length) DESC;
 ```

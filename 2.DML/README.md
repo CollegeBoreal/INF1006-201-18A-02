@@ -3,7 +3,7 @@
 http://dev.mysql.com/doc/index-other.html
 
 ### Fichier sakila-db
-. Télécharger le fichier world.sql dans le répertoire racine du projet.
+. Télécharger le fichier world.sql dans le répertoire racine de l'utilisateur. (Home Directory ~ )
 
 http://downloads.mysql.com/docs/sakila-db.zip
 

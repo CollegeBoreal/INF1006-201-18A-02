@@ -8,7 +8,7 @@ ORDER BY COUNT(actor.actor_id) desc
 LIMIT 1
 
 2eme requete
-
+ 
 SELECT c.name, avg(f.length) AS duration 
 FROM film f
 JOIN film_category USING (film_id) 

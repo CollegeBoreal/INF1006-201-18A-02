@@ -25,3 +25,4 @@ JOIN category c USING (category_id)
 GROUP BY c.name
 HAVING (SELECT avg(film.length) FROM film) < avg(f.length)
 ORDER BY avg(f.length) DESC;
+ 

@@ -23,7 +23,7 @@ $ docker exec --interactive some-mysql  mysql --user root -ppassword \
 ```
 
 #Les requetes:
-affichage les pays qui ont la langue English comme langue principale
+affichage les code du pays qui ont la langue English comme langue principale
 ```
 mysql>select c.Language, d.Code
  from 

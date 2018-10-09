@@ -19,3 +19,11 @@ $ docker exec --interactive --tty some-mysql bash
 mysql> use world;
 ```
 ![alt tag](screenshot.png)
+
+mysql> SELECT count(*) FROM country WHERE population like '%'; 
+
+mysql> SELECT count(language) 
+FROM countrylanguage 
+WHERE language like 'English%' ;
+
+mysql> 

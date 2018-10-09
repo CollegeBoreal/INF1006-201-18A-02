@@ -23,6 +23,7 @@ $ docker exec --interactive some-mysql  mysql --user root -ppassword \
 ```
 
 #Les requetes:
+affichage les pays qui ont la langue English comme langue principale
 ```
 mysql>select c.Language, d.Code
  from 
@@ -30,22 +31,24 @@ countrylanguage c
 inner join country d on d.code = c.CountryCode
 where Language like 'English%' ;
 ```
-
+affichage de population par le nom de villes:
 ```
-msql>Select c.Name AS city, sum(d.Population) 
+msql>Select city.Name , sum(country.Population) as population
  from 
-city c
+city 
 
-inner join city c on d.name = c.name
-inner join country d on d.Population = c.Population
-  
-where city='Kabul'
-group by c.Name
-having sum(d.Population) > 273000; 
+inner join country  on country.Population = city.Population
+group by city.Name
+having sum(country.Population) > 273000; 
 ```
-
+affichage les langues principaux de vill Kabul
 ```
+mysql>select city.Name, countrylanguage.Language
+from city
 
+inner join country on country.Code= city.CountryCode
+inner join countrylanguage on country.Code=countrylanguage.CountryCode
+where city.Name like 'Kabul%';
 ```
 
 ![alt tag](pict.png)

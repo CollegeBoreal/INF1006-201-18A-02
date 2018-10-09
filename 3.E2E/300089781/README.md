@@ -18,4 +18,4 @@ $ docker exec --interactive --tty some-mysql bash
 6.
 mysql> use world;
 ```
-![alt tag](ScreenShot.png)
+![alt tag](screenshot.png)

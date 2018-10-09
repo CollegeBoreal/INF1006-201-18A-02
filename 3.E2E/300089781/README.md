@@ -1,4 +1,4 @@
-
+```
 1.
 $ docker exec --interactive --tty some-mysql mysql --user root -ppassword --execute "create database world;"
 
@@ -14,9 +14,7 @@ $ docker exec  --interactive some-mysql  mysql --user root -ppassword world < ~/
 
 5.
 $ docker exec --interactive --tty some-mysql bash
-```
-root@2d0704b493d4:/# mysql -u root -p
-Enter password: 
-```
+
 6.
 mysql> use world;
+```

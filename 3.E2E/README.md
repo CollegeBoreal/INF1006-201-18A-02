@@ -22,6 +22,6 @@ Utilisez la base de donnees ci-dessus pour créer un jeu de données pemettant l
    
 ```
    Note:
-   Documenter veux dire montrer les commandes docker/MySQL pour qu'une autre personne puisse l'éxécuter
+   Documenter veux dire montrer les commandes docker/MySQL pour qu'une autre personne puisse les éxécuter
    Se reférer à l'exercice Sakila
 ```

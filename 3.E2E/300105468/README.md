@@ -19,3 +19,4 @@ $ docker exec  --interactive some-mysql  mysql --user root -ppassword word < ~/w
 5. Charger les données:
 
 $ docker exec  --interactive some-mysql  mysql --user root -ppassword word < ~/word-sql/word-data.sql
+

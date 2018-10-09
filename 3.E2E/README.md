@@ -21,9 +21,7 @@ Utilisez la base de donnees ci-dessus pour créer un jeu de données pemettant l
    * afficher le schéma de données `Reverse engineering` et l'afficher dans votre README.md
    
 
-   Note: 
-   
+   Note:
    Documenter veux dire montrer les commandes docker/MySQL pour qu'une autre personne puisse l'éxécuter
-   
-   se reférer à l'exercice Sakila
+   Se reférer à l'exercice Sakila
 

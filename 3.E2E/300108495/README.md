@@ -23,4 +23,4 @@ $ docker exec --interactive some-mysql  mysql --user root -ppassword \
  mysql> use world;
 ```
 
-![alt tag](https://github.com/CollegeBoreal/INF1006-202-18A-02/blob/master/3.E2E/Screenshot(27).png)
+![alt tag](Screenshot(27).png)

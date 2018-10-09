@@ -18,9 +18,34 @@ $ docker exec --interactive some-mysql  mysql --user root -ppassword \
  ```
  changer the database dans mysql
  ```
- 
  $ docker exec --interactive --tty some-mysql bash
  mysql> use world;
+```
+
+#Les requetes:
+```
+mysql>select c.Language, d.Code
+ from 
+countrylanguage c
+inner join country d on d.code = c.CountryCode
+where Language like 'English%' ;
+```
+
+```
+msql>Select c.Name AS city, sum(d.Population) 
+ from 
+city c
+
+inner join city c on d.name = c.name
+inner join country d on d.Population = c.Population
+  
+where city='Kabul'
+group by c.Name
+having sum(d.Population) > 273000; 
+```
+
+```
+
 ```
 
 ![alt tag](pict.png)

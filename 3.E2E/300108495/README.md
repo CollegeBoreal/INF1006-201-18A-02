@@ -31,7 +31,7 @@ countrylanguage c
 inner join country d on d.code = c.CountryCode
 where Language like 'English%' ;
 ```
-affichage de population par le nom de villes:
+affichage de population par le nom de villes qui ont plus de 273000:
 ```
 msql>Select city.Name , sum(country.Population) as population
  from 
@@ -41,7 +41,7 @@ inner join country  on country.Population = city.Population
 group by city.Name
 having sum(country.Population) > 273000; 
 ```
-affichage les langues principaux de vill Kabul
+affichage les langues principaux de la ville Kabul
 ```
 mysql>select city.Name, countrylanguage.Language
 from city

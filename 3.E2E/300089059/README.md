@@ -27,4 +27,4 @@ $ docker exec --interactive --tty some-mysql bash
 mysql> use world;
 
 
-![alt tag](CAPTUREWORLD.png)
+![alt tag](captureworld.PNG)

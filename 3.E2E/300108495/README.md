@@ -1,9 +1,9 @@
-#1:
+###1
 creation de la base de données world
 ```
 $ docker exec --interactive --tty some-mysql mysql --user root --password --execute "create database world;"
 ```
-#2:
+###2
 creation l'utilisateur voyager avec comme mot de passe voyager_1
 ```
 $ docker exec --interactive some-mysql  mysql --user root -ppassword \
@@ -27,3 +27,4 @@ $ docker exec --interactive some-mysql  mysql --user root -ppassword \
  mysql> use world;
 ```
 
+![alt tag](https://github.com/CollegeBoreal/INF1006-202-18A-02/blob/master/3.E2E/Screenshot (27).png)

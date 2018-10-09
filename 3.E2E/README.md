@@ -8,7 +8,7 @@ Utilisez la base de donnees ci-dessus pour créer un jeu de données pemettant l
 
 1. Créer votre propre répertoire (ID étudiant) et créer votre fichier README.md
 
-2. Documenter les étapes pour : 
+2. Documenter les étapes pour : (Utiliser le conteneur `some-mysql`)
  
    * créer la base de données `world`
    

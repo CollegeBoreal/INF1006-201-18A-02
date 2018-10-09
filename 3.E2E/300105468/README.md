@@ -1,5 +1,6 @@
 1.Créer la base de données word:
 
+
 $ docker exec --interactive --tty some-mysql mysql --user root --password --execute "create database word;"
 
 2.Créer un utilisateur:

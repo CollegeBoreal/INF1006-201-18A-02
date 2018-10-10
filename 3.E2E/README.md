@@ -28,4 +28,6 @@ Utilisez la base de donnees ci-dessus pour créer un jeu de données pemettant l
 
 3. Proposer 3 requetes SQL de votre choix démontrant votre compréhension de la base de données
 
+   Un texte expliquant ce que fait la requête doit être fourni. 
+
    Les requetes doivent proposer des jointures, aggrégation et fonctions (date ou montant)

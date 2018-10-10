@@ -9,6 +9,7 @@ Système de gestion de bases de données
 |20-09-18| [Modele](./1.Modele)                                | Presenter l'ebauche du model sous MySQL Workbench, fichier _*.mwb_    |
 |02-10-18| [DML](./2.DML/PRATIQUE.md#exercice)                 | Exercices de requetes sur Sakila (Paiements)                          |
 |04-10-18| [DML](./2.DML/PRATIQUE.md#perfectionnement)         | Exercices de requetes sur Sakila (Films)                              |
+|11-10-18| [E2E](./3.E2E)                                      | Exercices de requetes sur World (pays)                                |
 
 
 

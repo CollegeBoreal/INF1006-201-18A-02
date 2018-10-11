@@ -1,14 +1,14 @@
 
-1. creation de la base de donnee
+1. creation de la base de donnee world
 ```
 $ docker exec --interactive --tty some-mysql mysql --user root -ppassword --execute "create database world;"
 ```
-2. creation de la root 
+2. creation l'utilisateur voyager avec comme mot de passe voyager_1
 ```
 $ docker exec --interactive some-mysql  mysql --user root -ppassword \
      --execute "CREATE USER 'voyager'@'%' IDENTIFIED BY 'voyagers_1';"
 ```     
-3. charger la base de donnee
+3. charger la base de donnee world
 ```
 $ docker exec  --interactive some-mysql  mysql --user root -ppassword world < ~/world.sql
 ```

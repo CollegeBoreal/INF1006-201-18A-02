@@ -31,11 +31,12 @@ mysql> use world;
 
 1-Quel est la langue et capital du japon?
 ```
-select Language, Capital
+select countrylanguage.language,city.name
  from 
-countrylanguage 
-inner join capital,language = Country
-where country like japon;
+countrylanguage
+inner join country on (countrylanguage.countrycode= country.code) 
+inner join city on (country.capital=city.id)
+where country.name like 'japan';
 ```
 2-Combien il y a d habitant en italie?
 ```

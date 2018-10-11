@@ -54,6 +54,6 @@ Quelle est la langue la plus parlée à Ghana?
 
 select country (population) as population
  from 
-country 
+country  
 inner join countrylanguage = countrylanguage
 where language like Ghana;

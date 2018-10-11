@@ -22,11 +22,16 @@ mysql> use world;
 
 mysql> SELECT count(*) FROM country WHERE population like '%'; 
 
+Savoir quel pays parle anglais
+```
 mysql> SELECT country.code,countrylanguage.language 
 FROM countrylanguage 
 inner join country on country.code=countrylanguage.CountryCode
 WHERE language like 'English%' ;
-
+```
+Savoir le nom de villes avec leurs population
+```
 mysql> SELECT city.name, country.Population
 FROM city
 inner JOIN country on country.Population=city.Population
+```

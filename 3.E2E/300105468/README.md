@@ -53,8 +53,8 @@ GROUP BY countrylanguage.Language;
 
 Quelle est la langue la plus parlée à Ghana?
 
-select country (population) as population
+select country.name, countrylanguage.language
  from 
 country  
-inner join countrylanguage = countrylanguage
-where language like Ghana;
+inner join  countrylanguage on country.Code = countrylanguage.CountryCode
+where country.name like 'Ghana%';

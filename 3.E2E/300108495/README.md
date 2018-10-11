@@ -46,8 +46,7 @@ affichage les langues principaux de la ville Kabul
 mysql>select city.Name, countrylanguage.Language
 from city
 
-inner join country on country.Code= city.CountryCode
-inner join countrylanguage on country.Code=countrylanguage.CountryCode
+join countrylanguage using(CountryCode) 
 where city.Name like 'Kabul%';
 ```
 

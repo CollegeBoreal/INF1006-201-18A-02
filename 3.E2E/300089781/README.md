@@ -30,14 +30,14 @@ Savoir quel continent parle anglais
 ```
 mysql> SELECT country.Continent, countrylanguage.Language
 from country
-inner join countrylanguage on country.Code=countrylanguage.CountryCode
-where countrylanguage.Language like 'English%';
+inner JOIN countrylanguage on country.Code=countrylanguage.CountryCode
+WHERE countrylanguage.Language like 'English%';
 ```
 Savoir quel pays parle anglais
 ```
 mysql> SELECT country.code,countrylanguage.language 
 FROM countrylanguage 
-inner join country on country.code=countrylanguage.CountryCode
+inner JOIN country on country.code=countrylanguage.CountryCode
 WHERE language like 'English%' ;
 ```
 Savoir le nom de villes avec leurs population

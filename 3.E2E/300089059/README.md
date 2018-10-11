@@ -7,7 +7,7 @@ $ docker exec --interactive --tty some-mysql mysql --user root -ppassword --exec
 ```
 $ docker exec --interactive some-mysql  mysql --user root -ppassword \
      --execute "CREATE USER 'voyager'@'%' IDENTIFIED BY 'voyagers_1';"
-     ```
+ ```
 3.
 ```
 $ docker exec  --interactive some-mysql  mysql --user root -ppassword world < ~/world.sql
@@ -28,11 +28,11 @@ mysql> use world;
 ```
 
 ```
-Quel est la capital du japon
+Quel est la langue et capital du japon?
 ```
-Combien il y a d habitant en italie
+Combien il y a d habitant en italie?
 ```
-Quel est la langue parler au perou
+Ou est parler l espagnol?
 ```
 
 

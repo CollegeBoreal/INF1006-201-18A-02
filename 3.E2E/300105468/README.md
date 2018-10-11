@@ -25,12 +25,18 @@ $ docker exec  --interactive some-mysql  mysql --user root -ppassword word < ~/w
 
 ---------------------Devoir-----------------------------------------
 1.Requette
+
+Quel est le nom de la capital de la france?
+
 SELECT  country.Capital AS capital, country.Name AS Pays
 FROM
 country
 WHERE country.Name LIKE 'France';
 
 2.requette
+
+Quelles sont les langues parlées en Algérie?
+
 SELECT  countrylanguage.Language AS Langue , SUM(country.Population) AS NombreHabitants
 FROM
 country
@@ -40,6 +46,9 @@ GROUP BY countrylanguage.Language;
 
 
 3. requette 
+
+Quelle est la langue la plus parlée à Ghana?
+
 select country (population) as population
  from 
 country 

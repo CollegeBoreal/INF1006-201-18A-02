@@ -46,7 +46,7 @@ where country like italia;
 
 3-Ou est parler l espagnol?
 ```
-select country sum (population) as population
+select country (population) as population
  from 
 country 
 inner join countrylanguage = countrylanguage

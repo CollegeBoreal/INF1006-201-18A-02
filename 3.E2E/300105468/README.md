@@ -38,13 +38,14 @@ WHERE country.Name Like 'Guinea%';
 
 2.requette
 
-Quelles sont les langues parlées en Algérie?
+Quelles sont les langues parlées au Sénégal?
 
-SELECT  countrylanguage.Language AS Langue , SUM(country.Population) AS NombreHabitants
+
+SELECT  countrylanguage.Language AS Langue , SUM(country.Population) AS Population
 FROM
 country
 INNER JOIN countrylanguage ON (countrylanguage.CountryCode = country.code) 
-WHERE countrylanguage.Language LIKE 'Japon' and country.Name LIKE 'Algeria'
+WHERE country.Name = 'Senegal'
 GROUP BY countrylanguage.Language; 
 
 

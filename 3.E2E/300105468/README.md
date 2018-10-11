@@ -26,12 +26,15 @@ $ docker exec  --interactive some-mysql  mysql --user root -ppassword word < ~/w
 ---------------------Devoir-----------------------------------------
 1.Requette
 
-Quel est le nom de la capital de la france?
+Quel est le nom de la capital de la Guinée?
 
-SELECT  country.Capital AS capital, country.Name AS Pays
+SELECT  country.Name AS Pays, city.Name As capitale 
 FROM
 country
-WHERE country.Name LIKE 'France';
+inner join city on country.Capital = city.ID
+WHERE country.Name Like 'Guinea%';
+
+
 
 2.requette
 

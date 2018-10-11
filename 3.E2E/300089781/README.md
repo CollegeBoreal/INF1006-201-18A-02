@@ -22,8 +22,9 @@ mysql> use world;
 
 mysql> SELECT count(*) FROM country WHERE population like '%'; 
 
-mysql> SELECT count(language) 
+mysql> SELECT country.code,countrylanguage.language 
 FROM countrylanguage 
+inner join country on country.code=countrylanguage.CountryCode
 WHERE language like 'English%' ;
 
 mysql> 

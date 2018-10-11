@@ -48,5 +48,6 @@ GROUP BY countrylanguage.Language;
 ````
 6.Afficher le schéma 
 
+
 ![Alt tag](world.png)
 

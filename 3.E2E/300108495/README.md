@@ -19,6 +19,8 @@ $ docker exec --interactive some-mysql  mysql --user root -ppassword \
  changer the database dans mysql
  ```
  $ docker exec --interactive --tty some-mysql bash
+ mysql> mysql -u root -p ;
+ password: password
  mysql> use world;
 ```
 
@@ -28,18 +30,18 @@ affichage les noms du pays qui ont la langue English comme langue principale
 mysql>select c.Language, d.name
  from 
 countrylanguage c
-inner join country d on d.code = c.CountryCode
-where Language like 'English%' ;
+join country d on d.code = c.CountryCode
+where Language = 'English' ;
 ```
 affichage de population par le nom de villes qui ont plus de 273000:
 ```
 msql>Select city.Name , sum(country.Population) as population
- from 
-city 
 
-inner join country  on country.Population = city.Population
+from city 
+
+join country  using(Population) 
 group by city.Name
-having sum(country.Population) > 273000; 
+having sum(country.Population) > 273000;
 ```
 affichage les langues principaux de la ville Kabul
 ```
@@ -47,7 +49,7 @@ mysql>select city.Name, countrylanguage.Language
 from city
 
 join countrylanguage using(CountryCode) 
-where city.Name like 'Kabul%';
+where city.Name = 'Kabul';
 ```
 
 ![alt tag](pict.png)

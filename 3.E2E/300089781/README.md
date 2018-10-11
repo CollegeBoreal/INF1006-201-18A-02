@@ -27,4 +27,6 @@ FROM countrylanguage
 inner join country on country.code=countrylanguage.CountryCode
 WHERE language like 'English%' ;
 
-mysql> 
+mysql> SELECT city.name, country.Population
+FROM city
+inner JOIN country on country.Population=city.Population

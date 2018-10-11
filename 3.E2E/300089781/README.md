@@ -20,8 +20,13 @@ mysql> use world;
 ```
 ![alt tag](screenshot.png)
 
-mysql> SELECT count(*) FROM country WHERE population like '%'; 
-
+Savoir quel continent parle anglais
+```
+mysql> SELECT country.Continent, countrylanguage.Language
+from country
+inner join countrylanguage on country.Code=countrylanguage.CountryCode
+where countrylanguage.Language like 'English%';
+```
 Savoir quel pays parle anglais
 ```
 mysql> SELECT country.code,countrylanguage.language 

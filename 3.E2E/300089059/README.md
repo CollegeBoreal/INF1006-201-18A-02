@@ -54,7 +54,7 @@ select country (population) as population
  from 
 country 
 inner join countrylanguage = countrylanguage
-where language like spanish;
+where language like 'spanish';
 ```
 
 

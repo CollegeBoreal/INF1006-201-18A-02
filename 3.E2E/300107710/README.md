@@ -22,17 +22,31 @@ $docker exec  --interactive some-mysql  mysql --user root -ppassword world < ~/w
 5.Les requettes
   5.1 1ère requette
 ````
-
+SELECT  country.IndepYear AS AnnéeIndépendance, country.Name AS Pays
+FROM
+country
+WHERE country.Name LIKE 'algeria';
 ````
   5.2 2ème requette
 ````
-
+SELECT  countrylanguage.Language AS Langue , SUM(country.Population) AS NombreHabitants
+FROM
+country
+INNER JOIN countrylanguage ON (countrylanguage.CountryCode = country.code) 
+WHERE countrylanguage.Language LIKE 'Arabic' and country.Name LIKE 'Morocco'
+GROUP BY countrylanguage.Language;
 ````
 5.3 3ème requette
 ````
-
+SELECT  countrylanguage.Language AS Langue , SUM(city.Population) AS NombreHabitants
+FROM
+city
+INNER JOIN country ON (country.Code = city.CountryCode)
+INNER JOIN countrylanguage ON (countrylanguage.CountryCode = country.code) 
+WHERE countrylanguage.Language LIKE 'Arabic' and city.Name LIKE 'Casablanca'
+GROUP BY countrylanguage.Language;
 ````
-7.Afficher le schéma 
+6.Afficher le schéma 
 
 ![Alt tag](world.png)
 

@@ -27,7 +27,13 @@ $ docker exec --interactive --tty some-mysql bash
 mysql> use world;
 ```
 
-
+```
+Quel est la capital du japon
+```
+Combien il y a d habitant en italie
+```
+Quel est la langue parler au perou
+```
 
 
 

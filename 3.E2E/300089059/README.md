@@ -40,11 +40,12 @@ where country.name like 'japan';
 ```
 2-Combien il y a d habitant en italie?
 ```
-select country sum (population) as population
+select country.name,sum(country.population) as population
  from 
 country 
-inner join country = Country
-where country like italia;
+inner join city on (country.code = city.countrycode)
+where country.name like 'italia%'
+group by country.name;
 ```
 
 3-Ou est parler l espagnol?

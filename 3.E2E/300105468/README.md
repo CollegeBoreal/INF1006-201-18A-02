@@ -20,3 +20,28 @@ $ docker exec  --interactive some-mysql  mysql --user root -ppassword word < ~/w
 5. Charger les données:
 
 $ docker exec  --interactive some-mysql  mysql --user root -ppassword word < ~/word-sql/word-data.sql
+
+
+
+---------------------Devoir-----------------------------------------
+1.Requette
+SELECT  country.Capital AS capital, country.Name AS Pays
+FROM
+country
+WHERE country.Name LIKE 'France';
+
+2.requette
+SELECT  countrylanguage.Language AS Langue , SUM(country.Population) AS NombreHabitants
+FROM
+country
+INNER JOIN countrylanguage ON (countrylanguage.CountryCode = country.code) 
+WHERE countrylanguage.Language LIKE 'Japon' and country.Name LIKE 'Algeria'
+GROUP BY countrylanguage.Language;
+
+
+3. requette 
+select country (population) as population
+ from 
+country 
+inner join countrylanguage = countrylanguage
+where language like Ghana;

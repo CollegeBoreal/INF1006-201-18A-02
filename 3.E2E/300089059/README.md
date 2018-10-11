@@ -27,14 +27,19 @@ $ docker exec --interactive --tty some-mysql bash
 mysql> use world;
 ```
 
+1-Quel est la langue et capital du japon?
 ```
-Quel est la langue et capital du japon?
+select Language, Capital
+ from 
+countrylanguage 
+inner join capital,language = Country
+where country like japon;
 ```
-Combien il y a d habitant en italie?
+2-Combien il y a d habitant en italie?
 ```
-Ou est parler l espagnol?
+3-Ou est parler l espagnol?
 ```
-
+```
 
 
 

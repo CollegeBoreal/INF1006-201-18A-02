@@ -37,6 +37,13 @@ where country like japon;
 ```
 2-Combien il y a d habitant en italie?
 ```
+select country sum (population) as population
+ from 
+country 
+inner join country = Country
+where country like italia;
+```
+
 3-Ou est parler l espagnol?
 ```
 ```

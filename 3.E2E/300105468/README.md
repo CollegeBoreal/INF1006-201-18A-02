@@ -36,7 +36,7 @@ FROM
 country
 INNER JOIN countrylanguage ON (countrylanguage.CountryCode = country.code) 
 WHERE countrylanguage.Language LIKE 'Japon' and country.Name LIKE 'Algeria'
-GROUP BY countrylanguage.Language;
+GROUP BY countrylanguage.Language; 
 
 
 3. requette 

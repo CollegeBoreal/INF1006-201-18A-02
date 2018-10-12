@@ -1,9 +1,9 @@
 
-1.Creer de base de données(DB) World
+1.Creer la base de données(DB) World
 ```
 $ docker exec --interactive --tty some-mysql mysql --user root -ppassword --execute "create database world;"
 ```
-2.Creer de l'utilisateur voyager avec le mot de passe voyager_1
+2.Creer l'utilisateur voyager avec le mot de passe voyager_1
 ```
 $ docker exec --interactive some-mysql  mysql --user root -ppassword \
      --execute "CREATE USER 'voyager'@'%' IDENTIFIED BY 'voyagers_1';"

@@ -1,14 +1,14 @@
 
-1.Creation de base de données(DB) World
+1.Creer de base de données(DB) World
 ```
 $ docker exec --interactive --tty some-mysql mysql --user root -ppassword --execute "create database world;"
 ```
-2.Creation de l'utilisateur voyager avec le mot de passe voyager_1
+2.Creer de l'utilisateur voyager avec le mot de passe voyager_1
 ```
 $ docker exec --interactive some-mysql  mysql --user root -ppassword \
      --execute "CREATE USER 'voyager'@'%' IDENTIFIED BY 'voyagers_1';"
  ```
-3.Donner les droits à l'utilisateur d'utiliser la DB world
+3.Accorder les droits à l'utilisateur d'utiliser la DB world
 ```
 $  docker exec --interactive some-mysql  mysql --user root -ppassword \
   --execute "GRANT ALL ON world.* TO 'voyager'@'%';" 

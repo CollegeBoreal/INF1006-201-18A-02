@@ -50,11 +50,10 @@ group by country.name;
 
 3-Ou est parler l espagnol?
 ```
-select country (population) as population
- from 
-country 
-inner join countrylanguage = countrylanguage
-where language like 'spanish';
+ SELECT country.code,countrylanguage.language 
+FROM countrylanguage 
+inner JOIN country on country.code=countrylanguage.CountryCode
+WHERE language like 'spanish' ;
 ```
 
 

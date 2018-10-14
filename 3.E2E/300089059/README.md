@@ -29,7 +29,7 @@ $ docker exec --interactive --tty some-mysql bash
 mysql> use world;
 ```
 
-1-Quel est la langue et capital du japon?
+A-Quel est la langue et capital du japon?
 ```
 select countrylanguage.language,city.name
  from 
@@ -38,7 +38,7 @@ inner join country on (countrylanguage.countrycode= country.code)
 inner join city on (country.capital=city.id)
 where country.name like 'japan';
 ```
-2-Combien il y a d habitant en italie?
+B-Combien il y a d habitant en italie?
 ```
 select country.name,sum(country.population) as population
  from 
@@ -48,7 +48,7 @@ where country.name like 'italia%'
 group by country.name;
 ```
 
-3-Ou est parler l espagnol?
+C-Ou est parler l espagnol?
 ```
  SELECT country.code,countrylanguage.language 
 FROM countrylanguage 

@@ -19,3 +19,7 @@ CIF Contrainte d'intégrité Fonctionelle
 ```
 
 ```
+
+Tutoriel: 
+
+https://www.lynda.com/fr/MySQL-tutorials/Decouverte-MySQL/408086-2.html?org=collegeboreal.ca

@@ -20,6 +20,12 @@ CIF Contrainte d'intégrité Fonctionelle
 
 ```
 
-Tutoriel: 
+##  Tutoriel: 
+
+* Creation de tables
 
 https://www.lynda.com/fr/MySQL-tutorials/Decouverte-MySQL/408086-2.html?org=collegeboreal.ca
+
+* Gestion des enregistrements
+
+https://www.lynda.com/MySQL-tutorials/Decouverte-MySQL/408086-2.html?org=collegeboreal.ca

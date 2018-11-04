@@ -1,6 +1,6 @@
 
 Schema
 
-[alt tag](mostafa.png)
+[alttag](mostafa.png)
 
 

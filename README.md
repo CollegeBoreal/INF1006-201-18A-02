@@ -43,6 +43,8 @@ https://books.goalkicker.com/MySQLBook/ (free books)
 
 http://sql.sh/ressources/cours-sql-sh-.pdf (En francais)
 
+http://www.sqltutorial.org/wp-content/uploads/2016/04/SQL-cheat-sheet.pdf
+
 ### Docker
 
 https://hub.docker.com/_/mysql/

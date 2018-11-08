@@ -1,7 +1,8 @@
 
 Schem
 
-![Alt tag](./mysql-rename-forbid-disable-database-howto-logo.png)
+![Alt tag](mostafa.png)
+
 
 
 

@@ -104,7 +104,7 @@ EOF
 
 ```
 $ docker-compose build .
-``
+```
 
 
 ## Orchestrer

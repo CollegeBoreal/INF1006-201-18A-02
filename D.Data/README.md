@@ -121,10 +121,32 @@ $ docker-compose up -d
 $ docker exec --interactive --tty some-spark bash
 ```
 
-## lancer le Spark CLI
+## lancer le Spark (Shell/CLI)
 
 ```bash
 $ spark-shell \
      --driver-memory 4g --executor-memory 4g \
      --jars /usr/local/spark/lib/mysql-connector-java-5.1.38.jar
+```
+
+## Tester
+
+### Spark (Shell/CLI) UI
+
+```
+http://<IP>:4040 
+```
+
+### Hadoop 
+
+* Node Manager
+
+```
+http://<IP>:8042
+```
+
+* Cluster Manager
+
+```
+http://<IP>:8088
 ```

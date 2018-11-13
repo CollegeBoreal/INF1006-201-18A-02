@@ -54,10 +54,10 @@ services:
        - "/etc/bootstrap.sh"
        - -d
      depends_on:
-       - olddb
+       - any-mysql
 #       - db
 
-   olddb:
+   any-msql:
      image: mysql
      environment:
       - MYSQL_ROOT_PASSWORD=password

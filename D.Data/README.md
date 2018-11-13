@@ -103,7 +103,7 @@ EOF
 ## Construire
 
 ```
-$ docker-compose build .
+$ docker-compose build
 ```
 
 

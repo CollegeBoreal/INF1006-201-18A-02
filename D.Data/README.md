@@ -19,7 +19,7 @@ val driver = "com.mysql.jdbc.Driver"
 // ANY MYSQL DB
 val userSrcDB = "root"
 val passSrcDB = "password"
-val urlSource = "jdbc:mysql://any-mysql:3306/sakila?useSSL=false"
+val urlSource = "jdbc:mysql://src-mysql:3306/sakila?useSSL=false"
 
 // Prepare destination parameters
 val userDestDB = "root"
@@ -28,7 +28,7 @@ val nameDestDB = "myDB"
 val prop = new java.util.Properties
 prop.setProperty("user", userDestDB)
 prop.setProperty("password", passDestDB)
-val urlDest = s"jdbc:mysql://some-mysql:3306/$nameDestDB?useSSL=false"
+val urlDest = s"jdbc:mysql://dst-mysql:3306/$nameDestDB?useSSL=false"
 
 // Importing countries
 
@@ -78,17 +78,18 @@ services:
        - -d
      container_name: some-spark
      depends_on:
-       - any-mysql
-#       - db
+       - src-mysql
+       - dst-mysql
 
-   any-mysql:
+   src-mysql:
      image: mysql
+     container_name: src-mysql
      environment:
       - MYSQL_ROOT_PASSWORD=password
 
-networks:
-  default:
-    external:
-      name: bridge
-EOF
+   dst-mysql:
+     image: mysql
+     container_name: dst-mysql
+     environment:
+      - MYSQL_ROOT_PASSWORD=password
 ```

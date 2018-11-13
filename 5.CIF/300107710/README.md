@@ -1,7 +1,8 @@
 
 Schema
 
-![Alt tag](MyReto.png)
+![Alt tag](MyResto.png)
+
 
 
 

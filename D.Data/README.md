@@ -109,6 +109,22 @@ $ docker-compose build
 
 ## Orchestrer
 
-```
+```bash
 $ docker-compose up -d
-``
+```
+
+# Spark
+
+## Entrer dans le Shell du Container
+
+```bash
+$ docker exec --interactive --tty some-spark bash
+```
+
+## lancer le Spark CLI
+
+```bash
+$ spark-shell \
+     --driver-memory 4g --executor-memory 4g \
+	  --jars /usr/local/spark/lib/mysql-connector-java-5.1.38.jar
+```

@@ -136,3 +136,17 @@ $ spark-shell \
 ```
 http://<IP>:4040 
 ```
+
+### Hadoop 
+
+* Node Manager
+
+```
+http://<IP>:8042
+```
+
+* Cluster Manager
+
+```
+http://<IP>:8088
+```

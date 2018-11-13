@@ -36,3 +36,35 @@ $ docker image tag <image ID> myapp:latest
 
 ## Éxécuter le conteneur en utilisant le `tag`
 
+
+### Créer le fichier de configuration Docker (Dockerfile: encore appellé le Docker makefile )
+
+```
+$ cat <<EOF > docker-compose.yml
+version: '3'
+
+services:
+   spark:
+     build: ./data
+     ports:
+       - "8088:8088"
+       - "8042:8042"
+       - "4040:4040"
+     entrypoint:
+       - "/etc/bootstrap.sh"
+       - -d
+     depends_on:
+       - olddb
+#       - db
+
+   olddb:
+     image: mysql
+     environment:
+      - MYSQL_ROOT_PASSWORD=password
+
+networks:
+  default:
+    external:
+      name: bridge
+EOF
+```

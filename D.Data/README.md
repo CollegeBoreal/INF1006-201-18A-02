@@ -15,3 +15,24 @@ RUN curl -s http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.38/my
 COPY scripts /data/scripts
 EOF
 ```
+
+### Créer l'image Docker du projet
+
+```
+$ docker image build .
+```
+
+### Récupérer l'ID de l'image
+
+```
+$ docker images
+```
+
+### Donner un nom et version à l'image (Tagger)
+
+```
+$ docker image tag <image ID> myapp:latest
+```
+
+## Éxécuter le conteneur en utilisant le `tag`
+

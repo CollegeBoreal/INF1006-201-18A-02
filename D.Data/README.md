@@ -92,4 +92,5 @@ services:
      container_name: dst-mysql
      environment:
       - MYSQL_ROOT_PASSWORD=password
+EOF
 ```

@@ -98,7 +98,7 @@ services:
        - any-mysql
 #       - db
 
-   any-msql:
+   any-mysql:
      image: mysql
      environment:
       - MYSQL_ROOT_PASSWORD=password

@@ -76,6 +76,7 @@ services:
      entrypoint:
        - "/etc/bootstrap.sh"
        - -d
+     container_name: some-spark
      depends_on:
        - any-mysql
 #       - db

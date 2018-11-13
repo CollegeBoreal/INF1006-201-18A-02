@@ -100,3 +100,15 @@ services:
       - MYSQL_ROOT_PASSWORD=password
 EOF
 ```
+## Construire
+
+```
+$ docker-compose build .
+``
+
+
+## Orchestrer
+
+```
+$ docker-compose up -d
+``

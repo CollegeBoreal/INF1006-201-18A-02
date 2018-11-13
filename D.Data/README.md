@@ -1,12 +1,18 @@
 # Data
 
-## Scripts
+## Creer votre propre repertoire :id:
+
+```
+$ mkdir <id> && cd $_
+```
+
+## Creer le repertoire `Scripts`
 
 ```
 $ mkdir -p data/scripts
 ```
 
-### Creer le Script Spark
+### Creer le Script `Spark`
 
 ```Scala
 $ cat <<EOF > data/scripts/initial_data_dump.scala

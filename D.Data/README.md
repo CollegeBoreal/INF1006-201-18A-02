@@ -9,6 +9,7 @@ $ mkdir scripts
 ### Creer le Script Spark
 
 ```Scala
+$ cat <<EOF > scripts/initial_data_dump.scala
 
 import org.apache.spark.sql.SQLContext
 

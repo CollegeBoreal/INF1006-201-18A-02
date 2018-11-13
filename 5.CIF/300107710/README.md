@@ -1,5 +1,5 @@
 
-Schem
+Schema
 
 ![Alt tag](MyReto.png)
 

@@ -117,13 +117,8 @@ $ docker-compose up -d
 $ docker exec --interactive --tty some-spark bash
 ```
 
-## lancer le Spark (Shell/CLI)
+## pas de Spark (Shell/CLI) :x:
 
-```bash
-$ spark-shell \
-     --driver-memory 4g --executor-memory 4g \
-     --jars /usr/local/spark/lib/mysql-connector-java-5.1.38.jar
-```
 
 ## Tester
 

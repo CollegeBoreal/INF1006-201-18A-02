@@ -58,9 +58,9 @@ EOF
 
 ```
 $ cat <<EOF > data/Dockerfile
-FROM sequenceiq/spark:1.6.0
+FROM andypetrella/spark-notebook:0.8.3-scala-2.11.8-spark-2.2.2-hadoop-2.6.0-with-hive
 
-RUN curl -s http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar -o /usr/local/spark/lib/mysql-connector-java-5.1.38.jar
+RUN curl -s http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar -o /opt/docker/lib/mysql-connector-java-5.1.38.jar
 
 COPY scripts /data/scripts
 EOF
@@ -76,26 +76,22 @@ services:
    spark:
      build: ./data
      ports:
-       - "8088:8088"
-       - "8042:8042"
-       - "4040:4040"
-     entrypoint:
-       - "/etc/bootstrap.sh"
-       - -d
-     container_name: some-spark
+       - "9000:9000"
+       - "4040-4045:4040-4045"
+     container_name: note-spark
      depends_on:
-       - src-mysql
-       - dst-mysql
+       - note-src-mysql
+       - note-dst-mysql
 
-   src-mysql:
+   note-src-mysql:
      image: mysql
-     container_name: src-mysql
+     container_name: note-src-mysql
      environment:
       - MYSQL_ROOT_PASSWORD=password
 
-   dst-mysql:
+   note-dst-mysql:
      image: mysql
-     container_name: dst-mysql
+     container_name: note-dst-mysql
      environment:
       - MYSQL_ROOT_PASSWORD=password
 EOF
@@ -131,22 +127,15 @@ $ spark-shell \
 
 ## Tester
 
+### Spark Notebook 
+
+```
+http://<IP>:9000
+```
+
 ### Spark (Shell/CLI) UI
 
 ```
-http://<IP>:4040 
+http://<IP>:4040 a 4044 (Dependant des 
 ```
 
-### Hadoop 
-
-* Node Manager
-
-```
-http://<IP>:8042
-```
-
-* Cluster Manager
-
-```
-http://<IP>:8088
-```

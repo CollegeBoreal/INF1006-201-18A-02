@@ -131,6 +131,6 @@ http://<IP>:9000
 ### Spark (Shell/CLI) UI
 
 ```
-http://<IP>:4040 a 4044 (Dependant des 
+http://<IP>:4040 a 4044 (Dependant des clusters spark)
 ```
 

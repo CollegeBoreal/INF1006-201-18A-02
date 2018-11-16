@@ -27,3 +27,13 @@ services:
      environment:
       - MYSQL_ROOT_PASSWORD=password
 
+   test:
+     image: mysql:8
+     restart: always
+     depends_on:
+       - dst-mysql
+     environment:
+       - MYSQL_USER=root
+       - MYSQL_PWD=password
+     command: mysql --host=src-mysql --execute="show databases;"
+

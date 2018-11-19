@@ -150,3 +150,11 @@ http://<IP>:8042
 ```
 http://<IP>:8088
 ```
+
+# ETL (Extract Transform Load)
+
+## To export to file (data only)
+mysqldump -u [user] -p[pass] --no-create-info mydb > mydb.sql
+
+## To export to file (structure only)
+mysqldump -u [user] -p[pass] --no-data mydb > mydb.sql

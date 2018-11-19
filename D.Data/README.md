@@ -25,15 +25,18 @@ val driver = "com.mysql.jdbc.Driver"
 // ANY MYSQL DB
 val userSrcDB = "root"
 val passSrcDB = "password"
+
 val urlSource = "jdbc:mysql://src-mysql:3306/sakila?useSSL=false"
 
 // Prepare destination parameters
 val userDestDB = "root"
 val passDestDB = "password"
 val nameDestDB = "myDB"
+
 val prop = new java.util.Properties
 prop.setProperty("user", userDestDB)
 prop.setProperty("password", passDestDB)
+
 val urlDest = s"jdbc:mysql://dst-mysql:3306/$nameDestDB?useSSL=false"
 
 // Importing countries

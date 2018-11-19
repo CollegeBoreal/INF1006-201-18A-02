@@ -38,15 +38,18 @@ val urlDest = s"jdbc:mysql://dst-mysql:3306/$nameDestDB?useSSL=false"
 
 // Importing countries
 
-val df_iso_countries_oldDB = sqlContext.read.format("jdbc").option("url", urlSource).option("driver", driver).option("dbtable", "iso_countries").option("user", userSrcDB).option("password", passSrcDB).option("verifyServerCertificate", "false").load()
+val df_iso_countries_oldDB = sqlContext.read
+                              .format("jdbc")
+                              .option("url", urlSource)
+                              .option("driver", driver)
+                              .option("user", userSrcDB)
+                              .option("password", passSrcDB)
+                              .option("dbtable", "country")
+                              .load()
 
-val df_countries_oldDB = sqlContext.read.format("jdbc").option("url", urlSource).option("driver", driver).option("dbtable", "countries").option("user", userSrcDB).option("password", passSrcDB).option("verifyServerCertificate", "false").load()
+val df_countries_newDB = df_iso_countries_oldDB.select($"country_id", $"country")
 
-val df_countries_join_iso_oldDB = df_countries_oldDB.as("countries").join(df_iso_countries_oldDB.as("iso"),$"countries.country_name"===$"iso.printable_name")
-df_countries_oldDB.write.mode("overwrite").parquet("data/temp/COUNTRIES")
-
-val df_countries_newDB = df_iso_countries_oldDB.select($"id", $"printable_name" as "name",$"iso3" as "code")
-df_countries_newDB.write.mode("append").jdbc(urlDest,"COUNTRIES",prop) // Overwrite existing countries
+df_countries_newDB.write.mode("append").jdbc(urlDest,"COUNTRIES",prop)
 
 System.exit(0)
 EOF

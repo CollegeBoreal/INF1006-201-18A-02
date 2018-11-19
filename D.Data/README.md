@@ -37,7 +37,7 @@ val prop = new java.util.Properties
 prop.setProperty("user", userDestDB)
 prop.setProperty("password", passDestDB)
 
-val urlDest = s"jdbc:mysql://dst-mysql:3306/$nameDestDB?useSSL=false"
+val urlDest = s"jdbc:mysql://dst-mysql:3306/${nameDestDB}?useSSL=false"
 
 // Importing countries
 
@@ -130,7 +130,8 @@ $ docker exec --interactive --tty some-spark bash
 ```bash
 $ spark-shell \
      --driver-memory 4g --executor-memory 4g \
-     --jars /usr/local/spark/lib/mysql-connector-java-5.1.38.jar
+     --jars /usr/local/spark/lib/mysql-connector-java-5.1.38.jar \
+     -i data/scripts/initial_data_dump.scala
 ```
 
 ## Tester

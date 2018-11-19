@@ -29,18 +29,13 @@ val passSrcDB = "password"
 val urlSource = "jdbc:mysql://src-mysql:3306/sakila?useSSL=false"
 
 // Prepare destination parameters
-val userDestDB = "root"
-val passDestDB = "password"
-val nameDestDB = "myDB"
-
 val prop = new java.util.Properties
-prop.setProperty("user", userDestDB)
-prop.setProperty("password", passDestDB)
+prop.setProperty("user", "root")
+prop.setProperty("password", "password")
 
-val urlDest = s"jdbc:mysql://dst-mysql:3306/${nameDestDB}?useSSL=false"
+val urlDest = s"jdbc:mysql://dst-mysql:3306/myDB?useSSL=false"
 
 // Importing countries
-
 val country = sqlContext.read.
               format("jdbc").
               option("url", urlSource).

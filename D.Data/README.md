@@ -154,7 +154,11 @@ http://<IP>:8088
 # ETL (Extract Transform Load)
 
 ## To export to file (data only)
-mysqldump -u [user] -p[pass] --no-create-info mydb > mydb.sql
+```
+$ docker exec --interactive dst-mysql mysqldump -u root -ppassword --no-create-info myDB > mydb-data.sql
+```
 
 ## To export to file (structure only)
-mysqldump -u [user] -p[pass] --no-data mydb > mydb.sql
+```
+$ docker exec --interactive dst-mysql mysqldump -u root -ppassword --no-data mydb > mydb-create.sql
+```

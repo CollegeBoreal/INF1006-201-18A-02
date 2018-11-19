@@ -41,18 +41,16 @@ val urlDest = s"jdbc:mysql://dst-mysql:3306/$nameDestDB?useSSL=false"
 
 // Importing countries
 
-val df_iso_countries_oldDB = sqlContext.read
-                              .format("jdbc")
-                              .option("url", urlSource)
-                              .option("driver", driver)
-                              .option("user", userSrcDB)
-                              .option("password", passSrcDB)
-                              .option("dbtable", "country")
-                              .load()
+val country = sqlContext.read.
+              format("jdbc").
+              option("url", urlSource).
+              option("driver", driver).
+              option("user", userSrcDB).
+              option("password", passSrcDB).
+              option("dbtable", "country").
+              load()
 
-val df_countries_newDB = df_iso_countries_oldDB.select($"country_id", $"country")
-
-df_countries_newDB.write.mode("append").jdbc(urlDest,"COUNTRIES",prop)
+country.select($"country_id", $"country").write.mode("append").jdbc(urlDest,"COUNTRIES",prop)
 
 System.exit(0)
 EOF

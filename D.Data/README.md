@@ -158,7 +158,7 @@ http://<IP>:8088
 $ docker exec --interactive dst-mysql mysqldump -u root -ppassword --no-create-info myDB > mydb-data.sql
 ```
 
-## To export to file (structure only)
+## To export to file (schema only)
 ```
-$ docker exec --interactive dst-mysql mysqldump -u root -ppassword --no-data mydb > mydb-create.sql
+$ docker exec --interactive dst-mysql mysqldump -u root -ppassword --no-data mydb > mydb-schema.sql
 ```

@@ -41,16 +41,14 @@ val urlDest = s"jdbc:mysql://dst-mysql:3306/${nameDestDB}?useSSL=false"
 
 // Importing countries
 
-//val country = sqlContext.read.
-//              format("jdbc").
-//              option("url", urlSource).
-//              option("driver", driver).
-//              option("user", userSrcDB).
-//              option("password", passSrcDB).
-//              option("dbtable", "country").
-//              load()
-
-val country = sqlContext.jdbc(urlSource,"country",Map("driver"->driver,"user"->userSrcDB,"password"->passSrcDB))            
+val country = sqlContext.read.
+              format("jdbc").
+              option("url", urlSource).
+              option("driver", driver).
+              option("user", userSrcDB).
+              option("password", passSrcDB).
+              option("dbtable", "country").
+              load()
 
 country.select($"country_id", $"country").write.mode("append").jdbc(urlDest,"COUNTRIES",prop)
 

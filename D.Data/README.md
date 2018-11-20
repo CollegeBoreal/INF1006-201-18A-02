@@ -120,10 +120,10 @@ $ docker-compose up -d
 $ docker exec --interactive --tty some-spark bash
 ```
 
-## lancer le Spark (Shell/CLI)
+## lancer le Spark (Shell/CLI) dans le Container `some-spark`
 
 ```bash
-$ spark-shell \
+# spark-shell \
      --driver-memory 4g --executor-memory 4g \
      --jars /usr/local/spark/lib/mysql-connector-java-5.1.38.jar \
      -i data/scripts/initial_data_dump.scala
@@ -160,5 +160,5 @@ $ docker exec --interactive dst-mysql mysqldump -u root -ppassword --no-create-i
 
 ## To export to file (schema only)
 ```
-$ docker exec --interactive dst-mysql mysqldump -u root -ppassword --no-data mydb > mydb-schema.sql
+$ docker exec --interactive dst-mysql mysqldump -u root -ppassword --no-data myDB > mydb-schema.sql
 ```

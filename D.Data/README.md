@@ -160,5 +160,5 @@ $ docker exec --interactive dst-mysql mysqldump -u root -ppassword --no-create-i
 
 ## To export to file (schema only)
 ```
-$ docker exec --interactive dst-mysql mysqldump -u root -ppassword --no-data mydb > mydb-schema.sql
+$ docker exec --interactive dst-mysql mysqldump -u root -ppassword --no-data myDB > mydb-schema.sql
 ```

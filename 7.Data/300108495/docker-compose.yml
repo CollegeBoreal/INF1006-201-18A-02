@@ -16,13 +16,13 @@ services:
        - dst-mysql
 
    src-mysql:
-     image: mysql
+     image: mysql:5.7
      container_name: src-mysql
      environment:
       - MYSQL_ROOT_PASSWORD=password
 
    dst-mysql:
-     image: mysql
+     image: mysql:5.7
      container_name: dst-mysql
      environment:
       - MYSQL_ROOT_PASSWORD=password

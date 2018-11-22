@@ -1,5 +1,5 @@
 
-//1-Creation de la base de donnee paulservice//
+/*1-Creation de la base de donnee service_personnes*/
 
 2-Créer un utilisateur
 

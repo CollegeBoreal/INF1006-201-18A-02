@@ -13,6 +13,7 @@
    --execute "GRANT ALL ON service_personnes.* TO 'paul'@'%';"
  ```
 4-Charger la base
-```docker exec  --interactive some-mysql  mysql --user root -ppassword service_personnes < ~/services_personnes.sql````
+
+```docker exec  --interactive some-mysql  mysql --user root -ppassword service_personnes < ~/services_personnes.sql ```
 
 5-Charger les données

@@ -1,4 +1,4 @@
-1. creation de la base de donnee RestAfrique
+1. ## 🔎creation de la base de donnee RestAfrique
 ```
 $ docker exec --interactive --tty some-mysql mysql --user root -ppassword --execute "create database RestAfrique;"
 ```

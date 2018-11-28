@@ -18,7 +18,10 @@ $ docker exec  --interactive some-mysql  mysql --user root -ppassword password <
 ```
 ### Changer la base de données dans MYSQL
 ```
-
+$ docker exec --interactive --tty some-mysql bash
+root@...:/# mysql -u root -p ;
+Enter password: password
+mysql> use mwl_schema;
 ```
 
 ![Alt_tag](made.png)

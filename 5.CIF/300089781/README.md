@@ -17,4 +17,4 @@ $ docker exec --interactive some-mysql  mysql --user root -ppassword \
 $ docker exec  --interactive some-mysql  mysql --user root -ppassword mwl_schema < ~/madewithlove.sql
 ```
 
-![Alt_tag](mwl.png)
+![Alt_tag](made.png)

@@ -14,7 +14,11 @@ $ docker exec --interactive some-mysql  mysql --user root -ppassword \
 ```
 ### Charger la base de données Made with love
 ```
-$ docker exec  --interactive some-mysql  mysql --user root -ppassword mwl_schema < ~/madewithlove.sql
+$ docker exec  --interactive some-mysql  mysql --user root -ppassword password < ~/madewithlove.sql
+```
+### Changer la base de données dans MYSQL
+```
+
 ```
 
 ![Alt_tag](made.png)

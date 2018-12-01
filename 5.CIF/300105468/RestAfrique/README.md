@@ -11,7 +11,7 @@ $ docker exec --interactive some-mysql  mysql --user root -ppassword \
 ```
 $ docker exec  --interactive some-mysql  mysql --user root -ppassword RestAfrique < ~/RestAfrique.sql
 ```
-## 🔎Execution
+## 🔎Donner les droits à l'utilisateur d'utiliser la base de données RestAfrique
 ```
 $ docker exec  --interactive some-mysql  mysql --user root -ppassword RestAfrique < ~/RestAfrique.sql
 ```

@@ -25,4 +25,4 @@ $ docker exec --interactive some-mysql  mysql --user root -ppassword \
 ```
 
 
-![Alt tag](fashion.png)
+![Alt tag](fashion1.png)

@@ -1,6 +1,6 @@
 ## 1FN
 
-Plats, Riz, choux,Entrées, Percils, Piments, Aubergil, Poivre, Oignons, Desserts, Tomates, Gombo, Sauces, Poissons, Huiles, Pommes de terre, Carrottes, sels, Gimbo, l'eau.
+Plats, Riz, choux,Entrées, Percils, Piments, Aubergil, Poivre, Oignons, Desserts, Tomates, Gombo, Sauces, Poissons, Huiles, Pommes de terre, Carrottes, sels, Gimbo, l'eau, bissabe.
 
 ## 2FN
 

@@ -24,4 +24,5 @@ $ docker exec --interactive some-mysql  mysql --user root -ppassword \
  mysql> use fashion;
 ```
 
+
 ![Alt tag](fashion.png)

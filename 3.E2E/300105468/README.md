@@ -1,30 +1,30 @@
-1.Créer la base de données word:
+## 1.Créer la base de données word:
 
 
 $ docker exec --interactive --tty some-mysql mysql --user root --password --execute "create database word;"
 
-2.Créer un utilisateur:
+## 2.Créer un utilisateur:
 
 $ docker exec --interactive some-mysql  mysql --user root -ppassword \
     --execute "CREATE USER 'voyager'@'%' IDENTIFIED BY 'voyager_1';"
     
-3. Accorder tous les drois a l'utilisateur d'utiliser la base word:
+## 3. Accorder tous les drois a l'utilisateur d'utiliser la base word:
 
 $ docker exec --interactive some-mysql  mysql --user root -password \
    --execute "GRANT ALL ON word.* TO 'voyager'@'%';"
 
-4.Charger la base:
+## 4.Charger la base:
 
 $ docker exec  --interactive some-mysql  mysql --user root -ppassword word < ~/word-sql/word-schema.sql
 
-5. Charger les données:
+## 5. Charger les données:
 
 $ docker exec  --interactive some-mysql  mysql --user root -ppassword word < ~/word-sql/word-data.sql
 
 
 
 ---------------------Devoir-----------------------------------------
-1.Requette
+## 1.Requette
 
 Quel est le nom de la capital de la Guinée?
 
@@ -36,7 +36,7 @@ WHERE country.Name Like 'Guinea%';
 
 
 
-2.requette
+## 2.requette
 
 Quelles sont les langues parlées au Sénégal?
 
@@ -49,7 +49,7 @@ WHERE country.Name = 'Senegal'
 GROUP BY countrylanguage.Language; 
 
 
-3. requette 
+## 3. requette 
 
 Quelle est la langue la plus parlée à Ghana?
 

@@ -1,6 +1,6 @@
 ## 1FN
 
-Plats, Riz, choux,Entrées, Percils, Piments, Aubergil, Poivre, Oignons, Desserts, Tomates, Gombo, Sauces, Poissons, Huiles, Pommes de terre, Carrottes, sels, Gimbo, l'eau, bissabe, Sucre vani, Harom liquide, Vinto en poudre, Sucre, Citron en poudre.
+Plats, Riz, choux,Entrées, Percils, Piments, Aubergil, Poivre, Oignons, Desserts, Tomates, Gombo, Sauces, Poissons, Huiles, Pommes de terre, Carrottes, Viande, Poulet, sels, Gimbo, l'eau, bissabe, Sucre vani, Harom liquide, Vinto en poudre, Sucre, Citron en poudre.
 
 ## 2FN
 

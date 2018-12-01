@@ -23,3 +23,4 @@ $ docker exec --interactive --tty some-mysql bash
 ```
 mysql> use RestAfrique;
 ```
+![Alt tag](restafrique.png)

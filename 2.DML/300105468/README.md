@@ -1,4 +1,4 @@
-1er requete
+## 1er requete
 
 SELECT actor.last_name, COUNT(actor_id)
 FROM actor
@@ -7,7 +7,7 @@ GROUP BY actor.last_name
 ORDER BY COUNT(actor.actor_id) desc 
 LIMIT 1
 
-2eme requete
+## 2eme requete
  
 SELECT c.name, avg(f.length) AS duration 
 FROM film f
@@ -16,7 +16,7 @@ JOIN category c USING (category_id)
 GROUP BY c.name
 ORDER BY avg(f.length) DESC;
 
-3e requete
+## 3e requete
 
 SELECT c.name, avg(f.length) AS duration 
 FROM film f

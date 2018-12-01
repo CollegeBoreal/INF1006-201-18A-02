@@ -14,7 +14,7 @@ $ docker exec --interactive some-mysql  mysql --user root -ppassword \
  ```
  ### charger la base de données fashion
  ```
- $docker exec  --interactive some-mysql  mysql --user root -ppassword world < ~/fashion.sql  
+ $docker exec  --interactive some-mysql  mysql --user root -ppassword fashion < ~/fashion.sql  
  ```
  changer the database dans mysql
  ```

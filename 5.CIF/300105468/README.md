@@ -2,7 +2,7 @@
 ```
 $ docker exec --interactive --tty some-mysql mysql --user root -ppassword --execute "create database RestAfrique;"
 ```
-## 🔎Creation l'utilisateur delice avec comme mot de passe delice_1
+## 🔎Creation l'utilisateur rest avec comme mot de passe rest_1
 ```
 $ docker exec --interactive some-mysql  mysql --user root -ppassword \
      --execute "CREATE USER 'delice'@'%' IDENTIFIED BY 'delice_1';"

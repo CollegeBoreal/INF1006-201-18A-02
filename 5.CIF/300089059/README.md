@@ -1,7 +1,7 @@
 
 1-Creation de la base de donnee services_personnes
 
-```docker exec --interactive --tty some-mysql mysql --user root --password --execute "create database services;"```
+```docker exec --interactive --tty some-mysql mysql --user root --password --execute "create database service;"```
 
 2-Créer un utilisateur
 ```docker exec --interactive some-mysql  mysql --user root -ppassword \ --execute "CREATE USER 'service'@'%' IDENTIFIED BY 'paul';" ```

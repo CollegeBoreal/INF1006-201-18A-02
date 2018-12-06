@@ -14,4 +14,4 @@
 
 5-Charger les données
  
-![Alt.tag] (service.png)
+![Alt_tag](service.png)

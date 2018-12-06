@@ -16,7 +16,7 @@ $ docker exec --interactive some-mysql  mysql --user root -ppassword \
  ```
  $docker exec  --interactive some-mysql  mysql --user root -ppassword fashion < ~/fashion.sql  
  ```
- changer the database dans mysql
+ ### choisir la base de donnee dans mysql
  ```
  $ docker exec --interactive --tty some-mysql bash
  mysql> mysql -u root -p ;

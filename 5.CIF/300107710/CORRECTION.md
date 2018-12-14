@@ -19,6 +19,6 @@ la BD `mostafa` au lieu de `MyResto` est a prendre en compte
 
 ## :three: Modele mismatch
 
-Le modele sauvegarde dans github n'est pas le meme presenter sans le .png
+Le modele sauvegarde dans github n'est pas le meme presente sans le .png
 
-Le modele sur github .mwb a ete note a la place 
+:important: Le modele sur github .mwb a ete note a la place 

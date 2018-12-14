@@ -10,3 +10,8 @@ $ docker exec  --interactive some-mysql  mysql --user root -ppassword MyResto < 
 mysql: [Warning] Using a password on the command line interface can be insecure.
 ERROR 1022 (23000) at line 117: Can't write; duplicate key in table 'Tarif'
 ```
+
+
+# Modele
+
+Le modele sauvegarde dans github n'est pas le meme presenter sans le .png

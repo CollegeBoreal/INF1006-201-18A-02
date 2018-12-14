@@ -1,5 +1,7 @@
 # :x:
 
+## :one: erreur dans la commande passwd
+
 ```
 $ docker exec --interactive some-mysql  mysql --user root -ppassword \ --execute "CREATE USER 'paul'@'%' IDENTIFIED BY 'paul1';"
 mysql: [Warning] Using a password on the command line interface can be insecure.
@@ -12,4 +14,10 @@ owners.
 
 Usage: mysql [OPTIONS] [database]
 
+```
+
+## :two: le fichier SQL charge dans la BD myDB pas dans la BD service
+
+```
+$ docker exec  --interactive some-mysql  mysql --user root -ppassword service < ~/service.sql
 ```

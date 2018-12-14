@@ -15,3 +15,5 @@ ERROR 1022 (23000) at line 117: Can't write; duplicate key in table 'Tarif'
 # Modele
 
 Le modele sauvegarde dans github n'est pas le meme presenter sans le .png
+
+Le modele sur github .mwb a ete note a la place 

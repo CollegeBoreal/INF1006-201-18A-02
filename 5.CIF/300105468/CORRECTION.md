@@ -1,10 +1,9 @@
 # :x:
 
+## :one: Erreur de Contrainte dans le chargement
+
 ```
-$ docker exec  --interactive some-mysql  mysql --user root -ppassword RestAfrique < ~/Restafrique.sql 
+$ $ docker exec  --interactive some-mysql  mysql --user root -ppassword RestAfrique < ~/Restafrique.sql 
 mysql: [Warning] Using a password on the command line interface can be insecure.
-ERROR 1064 (42000) at line 44: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VISIBLE,
-  CONSTRAINT `fk_tarrifs`
-    FOREIGN KEY (`prix`)
-    REFERENCES `rest' at line 9
+ERROR 1826 (HY000) at line 131: Duplicate foreign key constraint name 'fk_clients'
 ```

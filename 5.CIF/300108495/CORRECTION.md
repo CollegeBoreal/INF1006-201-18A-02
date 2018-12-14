@@ -1,5 +1,7 @@
 # :x:
 
+## :one: Erreur de chargement mais tables chargees
+
 ```
 $ docker exec  --interactive some-mysql  mysql --user root -ppassword fashion < ~/fashion.sql 
 mysql: [Warning] Using a password on the command line interface can be insecure.

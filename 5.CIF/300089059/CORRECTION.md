@@ -16,7 +16,7 @@ Usage: mysql [OPTIONS] [database]
 
 ```
 
-## :two: le fichier SQL charge dans la BD myDB pas dans la BD service
+## :two: le fichier SQL charge dans la BD `myDB` pas dans la BD `service`
 
 ```
 $ docker exec  --interactive some-mysql  mysql --user root -ppassword service < ~/service.sql

@@ -15,6 +15,6 @@ $ docker exec  --interactive some-mysql  mysql --user root -ppassword mwl_schema
 mysql: [Warning] Using a password on the command line interface can be insecure.
 ```
 
-# Model
+## :two: Model
 
-Model non identique avec celui sauvegarde
+Model non identique avec celui sauvegarde dans l'image

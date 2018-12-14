@@ -21,4 +21,4 @@ la BD `mostafa` au lieu de `MyResto` est a prendre en compte
 
 Le modele sauvegarde dans github n'est pas le meme presente sans le .png
 
-:important: Le modele sur github .mwb a ete note a la place 
+:warning: Le modele sur github .mwb a ete note a la place 

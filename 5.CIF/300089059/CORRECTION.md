@@ -1,4 +1,4 @@
-# :cross:
+# :mg:
 
 ```
 $ docker exec --interactive some-mysql mysql --user root -ppassword service < ~/service.sql

@@ -14,7 +14,3 @@ changement de nom de DB a `mwl_schema`
 $ docker exec  --interactive some-mysql  mysql --user root -ppassword mwl_schema < ~/madewithlove.sql
 mysql: [Warning] Using a password on the command line interface can be insecure.
 ```
-
-## :two: Model
-
-Model non identique avec celui sauvegarde dans l'image

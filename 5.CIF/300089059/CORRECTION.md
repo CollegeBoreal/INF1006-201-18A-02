@@ -1,9 +1,15 @@
 # :x:
 
 ```
-$ docker exec --interactive some-mysql mysql --user root -ppassword service < ~/service.sql
+$ docker exec --interactive some-mysql  mysql --user root -ppassword \ --execute "CREATE USER 'paul'@'%' IDENTIFIED BY 'paul1';"
 mysql: [Warning] Using a password on the command line interface can be insecure.
-ERROR 1064 (42000) at line 32: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VISIBLE,
-  CONSTRAINT `fk_SERVICES_ZONE_GEOGRAPHIQUE1`
-    FOREIGN KEY (`ZONE_GE' at line 8
+mysql  Ver 8.0.11 for Linux on x86_64 (MySQL Community Server - GPL)
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Usage: mysql [OPTIONS] [database]
+
 ```

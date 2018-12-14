@@ -52,3 +52,7 @@ Database changed
 mysql> show tables;
 Empty set (0.00 sec)
 ```
+
+##  :three: mismatch modele et .sql
+
+Le fichier .sql n'a pas les tables `ADRESSES` et `DELIVRAISONS`
